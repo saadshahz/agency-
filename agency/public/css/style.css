@@ -1,0 +1,8 @@
+:root{
+  --primary:#15B75A;
+  --secondary:#515151;
+}
+body{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
