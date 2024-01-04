@@ -1,4 +1,6 @@
-import { Poppins } from 'next/font/google'
+import { Poppins } from 'next/font/google';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "/public/css/style.css";
 
 const poppins = Poppins({
  weight: '400',

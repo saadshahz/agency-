@@ -6,3 +6,18 @@ body{
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+header{padding: 20px 0;}
+header .logo{}
+header .logo img { height: 60px; width: 120px; }
+header .navigation{height: 100%;}
+header .navigation ul { display: flex;height: 100%;align-items: center;padding: 0; }
+header .navigation ul li{list-style: none;padding-right: 40px;}
+header .navigation ul li a{color:var(--primary);text-decoration: none;transition: 0.5s;}
+header .navigation ul li a:active{color: #000;}
+header .navigation ul li a:hover{color: #000;}
+header .header-contact-btn{height: 100%;display: flex;justify-content: end;align-items: center;}
+header .header-contact-btn button { padding: 0.6em; border: none; background-color: transparent; border-radius: 20px; text-transform: uppercase; cursor: pointer; color: var(--primary); transition: all 1000ms; font-size: 15px; position: relative; overflow: hidden; outline: 1px solid var(--primary); width: 180px; letter-spacing: 3px; }
+header .header-contact-btn button:hover { color: #ffffff; transform: scale(1.1); outline: 2px solid var(--primary); box-shadow: 4px 5px 17px -4px var(--primary); }
+header .header-contact-btn button::before { content: ""; position: absolute; left: -50px; top: 0; width: 0; height: 100%; background-color: var(--primary); transform: skewX(45deg); z-index: -1; transition: width 1000ms; }
+header .header-contact-btn button:hover::before { width: 250%; }
