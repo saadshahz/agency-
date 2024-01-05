@@ -14,10 +14,29 @@ header .navigation{height: 100%;}
 header .navigation ul { display: flex;height: 100%;align-items: center;padding: 0; }
 header .navigation ul li{list-style: none;padding-right: 40px;}
 header .navigation ul li a{color:var(--primary);text-decoration: none;transition: 0.5s;}
-header .navigation ul li a:active{color: #000;}
-header .navigation ul li a:hover{color: #000;}
+header .navigation ul li a:active{color: var(--secondary);}
+header .navigation ul li a:hover{color: var(--secondary);}
 header .header-contact-btn{height: 100%;display: flex;justify-content: end;align-items: center;}
 header .header-contact-btn button { padding: 0.6em; border: none; background-color: transparent; border-radius: 20px; text-transform: uppercase; cursor: pointer; color: var(--primary); transition: all 1000ms; font-size: 15px; position: relative; overflow: hidden; outline: 1px solid var(--primary); width: 180px; letter-spacing: 3px; }
 header .header-contact-btn button:hover { color: #ffffff; transform: scale(1.1); outline: 2px solid var(--primary); box-shadow: 4px 5px 17px -4px var(--primary); }
 header .header-contact-btn button::before { content: ""; position: absolute; left: -50px; top: 0; width: 0; height: 100%; background-color: var(--primary); transform: skewX(45deg); z-index: -1; transition: width 1000ms; }
 header .header-contact-btn button:hover::before { width: 250%; }
+
+footer{background-color: var(--primary);padding: 40px 0;}
+footer .foo-desc{display: flex;justify-content: space-around;align-items: center;height: 100%;}
+footer .foo-desc .foo-desc-img{}
+footer .foo-desc .foo-desc-qoute{}
+footer .foo-desc .foo-desc-qoute h3{color: #fff;font-size: 45px;font-weight: 600;margin: 0;}
+footer .foo-links{}
+footer .foo-links ul{}
+footer .foo-links ul li{list-style: none;padding-bottom: 10px;}
+footer .foo-links ul li a{color: #fff;text-decoration: none;transition: 0.5s;}
+footer .foo-links ul li a:hover{color: var(--secondary);}
+footer .foo-contact{}
+footer .foo-contact ul{}
+footer .foo-contact ul li{list-style: none;padding-bottom: 10px;}
+footer .foo-contact ul li span {padding-right: 10px;}
+footer .foo-contact ul li span svg{color: #fff;}
+footer .foo-contact ul li a{color: #fff;text-decoration: none;transition: 0.5s;}
+footer .foo-contact ul li a svg{font-size: 25px;margin-left: 30px;}
+footer .foo-contact ul li a:hover{color: var(--secondary);}
