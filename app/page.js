@@ -1,3 +1,4 @@
+import Slider from "../component/Slider";
 import Footer from "../component/common/Footer";
 import Header from "../component/common/Header";
 
@@ -6,7 +7,7 @@ export default function Home() {
     <>
       <Header />
       <div>
-        <p>Home</p>
+        <Slider />
       </div>
       <Footer/>
     </>
