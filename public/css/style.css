@@ -52,3 +52,16 @@ footer .foo-contact ul li a:hover{color: var(--secondary);}
 .banner .banner-content a:hover { color: #ffffff; transform: scale(1.1); outline: 2px solid var(--primary); box-shadow: 4px 5px 17px -4px var(--primary); }
 .banner .banner-content a::before { content: ""; position: absolute; left: -50px; top: 0; width: 0; height: 100%; background-color: var(--primary); transform: skewX(45deg); z-index: -1; transition: width 1000ms; }
 .banner .banner-content a:hover::before { width: 250%; }
+.swiper-pagination-bullet-active{background: var(--primary) !important ;}
+
+.home-help-section { padding: 50px 0;background-image: url("../../public/images/help-section-bg.svg"); background-position: center;background-size: 100% 100%; }
+.home-help-section .help_heading{padding-bottom: 20px;text-align: center;}
+.home-help-section .help_heading h2{font-size: 50px;font-weight: bolder;text-transform: capitalize;color: var(--primary);}
+.home-help-section .help-card { padding: 20px 10px;height: 300px;background-color: #fff; display: flex;justify-content: space-around; flex-direction: column; align-items: center;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius: 10px; }
+.home-help-section .help-card .help-card-image{}
+.home-help-section .help-card .help-card-image span{background-color: #B7E9CC;color: var(--primary);padding: 20px;border-radius: 50%;}
+.home-help-section .help-card .help-card-image span svg {font-size: 30px;}
+.home-help-section .help-card .help-card-title{}
+.home-help-section .help-card .help-card-title h4{font-weight: 800;text-transform: capitalize;color: var(--primary);text-align: center;margin: 0;}
+.home-help-section .help-card .help-card-desc {text-align: center;}
+.home-help-section .help-card .help-card-desc p{margin: 0;color: var(--secondary);}
