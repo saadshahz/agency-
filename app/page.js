@@ -10,6 +10,8 @@ import { GiMaterialsScience } from "react-icons/gi";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ClientSlider from "../component/ClientSlider";
+import client from "../public/images/client/client.png"
 
 export default function Home() {
   const dummyHelpContent = [
@@ -167,6 +169,26 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <section className="client-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="client-heading">
+                <h2>We Shared Value with our clients</h2>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <ClientSlider/>
+            </div>
+            <div className="col-md-6">
+              <div className="client-image" >
+                <Image src={client} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </>
