@@ -77,11 +77,11 @@ footer .foo-contact ul li a:hover{color: var(--secondary);}
 .work-section .work-top-section {padding:0 0 20px 0 ;}
 .work-section .work-top-section .work-section-heading{}
 .work-section .work-top-section .work-section-heading h2{color: var(--primary);font-weight: 800;font-size: 50px;}
-.work-section .work-top-section .work-section-more{display: flex;justify-content: flex-end;padding: 0 10px;}
-.work-section .work-top-section .work-section-more a{padding: 0.6em; border: none; background-color: transparent; border-radius: 20px; text-transform: uppercase; cursor: pointer; color: var(--primary); transition: all 1000ms; font-size: 15px; position: relative; overflow: hidden; outline: 1px solid var(--primary); width: 180px; letter-spacing: 3px; text-align: center;text-decoration: none;}
-.work-section .work-top-section .work-section-more a:hover { color: #ffffff; transform: scale(1.1); outline: 2px solid var(--primary); box-shadow: 4px 5px 17px -4px var(--primary); }
-.work-section .work-top-section .work-section-more a::before { content: ""; position: absolute; left: -50px; top: 0; width: 0; height: 100%; background-color: var(--primary); transform: skewX(45deg); z-index: -1; transition: width 1000ms; }
-.work-section .work-top-section .work-section-more a:hover::before { width: 250%; }
+.work-section-more{display: flex;justify-content: flex-end;padding: 0 10px;}
+.work-section-more a{padding: 0.6em; border: none; background-color: transparent; border-radius: 20px; text-transform: uppercase; cursor: pointer; color: var(--primary); transition: all 1000ms; font-size: 15px; position: relative; overflow: hidden; outline: 1px solid var(--primary); width: 180px; letter-spacing: 3px; text-align: center;text-decoration: none;}
+.work-section-more a:hover { color: #ffffff; transform: scale(1.1); outline: 2px solid var(--primary); box-shadow: 4px 5px 17px -4px var(--primary); }
+.work-section-more a::before { content: ""; position: absolute; left: -50px; top: 0; width: 0; height: 100%; background-color: var(--primary); transform: skewX(45deg); z-index: -1; transition: width 1000ms; }
+.work-section-more a:hover::before { width: 250%; }
 .work-section .work-card{box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;height: 350px; border-radius: 10px;}
 .work-section .work-card .work-img{}
 .work-section .work-card .work-img img { width: 100%; object-fit: cover;border-top-right-radius: 10px ;border-top-left-radius: 10px}
@@ -110,3 +110,17 @@ footer .foo-contact ul li a:hover{color: var(--secondary);}
 .client-card .client-name h5{font-size: 30px;color: var(--primary);font-weight: 800;}
 .client-card .client-company{}
 .client-card .client-company p{font-weight: 800;}
+
+.news{padding: 60px 0;}
+.news .news-heading{border-bottom: 1px solid var(--secondary);padding-bottom: 20px ;}
+.news .news-heading h2{color: var(--primary);font-weight: 800;font-size: 50px;}
+.news .news-content{border-bottom: 1px solid var(--secondary);}
+.news .news-content .news-card{display: flex;justify-content: space-around;padding: 20px 0;}
+.news .news-content .news-card .news-card-img{}
+.news .news-content .news-card .news-card-title{}
+.news .news-content .news-card .news-card-title h3{font-weight: 600;}
+.news .news-content .news-card .news-card-title p{color: var(--secondary);}
+.news .news-content .news-card .news-card-desc{display: flex;justify-content: center;align-items: center;height: 100%;}
+.news .news-content .news-card .news-card-detailView{display: flex;justify-content: center;align-items: center;height: 100%;}
+.news .news-content .news-card .news-card-detailView a{color: var(--secondary);font-size: 35px;transition: 0.5s;}
+.news .news-content .news-card .news-card-detailView a:hover{color: var(--primary);}

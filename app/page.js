@@ -11,7 +11,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ClientSlider from "../component/ClientSlider";
-import client from "../public/images/client/client.png"
+import client from "../public/images/client/client.png";
 
 export default function Home() {
   const dummyHelpContent = [
@@ -54,6 +54,27 @@ export default function Home() {
     },
   ];
   const [HelpContent, setHelpContent] = useState(dummyHelpContent);
+  const dummyNews = [
+    {
+      img: "/images/news/1.png",
+      date: "August 27, 2023",
+      title: "Winner Innovative Use of Technology Marketing Award",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id arcu lacus cras nullam ut sed orci aenean. Mi facilisi etiam duis ac. Praesent ut aliquam posuere sit. Nibh eget risus nibh tincidunt.",
+    },
+    {
+      img: "/images/news/2.png",
+      date: "January 15, 2023",
+      title: "Technology Marketing Award",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id arcu lacus cras nullam ut sed orci aenean. Mi facilisi etiam duis ac. Praesent ut aliquam posuere sit. Nibh eget risus nibh tincidunt.",
+    },
+    {
+      img: "/images/news/3.png",
+      date: "February 20, 2023",
+      title: "Innovative Use of Technology Marketing Award",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id arcu lacus cras nullam ut sed orci aenean. Mi facilisi etiam duis ac. Praesent ut aliquam posuere sit. Nibh eget risus nibh tincidunt.",
+    },
+  ];
+  const [news, setNews] = useState(dummyNews);
   return (
     <>
       <Header />
@@ -179,14 +200,63 @@ export default function Home() {
               </div>
             </div>
             <div className="col-md-6">
-              <ClientSlider/>
+              <ClientSlider />
             </div>
             <div className="col-md-6">
-              <div className="client-image" >
+              <div className="client-image">
                 <Image src={client} />
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="news">
+        <div className="container">
+          <div className="news-heading">
+            <div className="row">
+              <div className="col-md-6">
+                <h2>News</h2>
+              </div>
+              <div className="col-md-6">
+                <div className="work-section-more">
+                  <Link href={"#"}>See More</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          {news &&
+            news.map((item, idx) => {
+              return (
+                <div className="news-content" key={idx}>
+                  <div className="news-card">
+                    <div className="row">
+                      <div className="col-md-2">
+                        <div className="news-card-img">
+                          <Image src={item.img} width={200} height={200} />
+                        </div>
+                      </div>
+                      <div className="col-md-4">
+                        <div className="news-card-title">
+                          <p>{item.date}</p>
+                          <h3>{item.title}</h3>
+                        </div>
+                      </div>
+                      <div className="col-md-5">
+                        <div className="news-card-desc">
+                          <p>{item.desc}</p>
+                        </div>
+                      </div>
+                      <div className="col-md-1">
+                        <div className="news-card-detailView">
+                          <Link href={"#"}><IoArrowForwardCircleOutline /></Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
         </div>
       </section>
 
