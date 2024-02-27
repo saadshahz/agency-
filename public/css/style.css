@@ -135,3 +135,14 @@ footer .foo-contact ul li a:hover{color: var(--secondary);}
 .team_section .team_card .team_card_desc{display: flex;justify-content: center;align-items: center;flex-direction: column;height: 25%;}
 .team_section .team_card .team_card_desc p{margin: 0;}
 .team_section .team_card .team_card_desc h4{color: var(--primary);font-weight: 600;font-size: 24px;}
+
+.award-section{padding: 40px 0;}
+.award-section .inner::after{content: "";display: block;background-color: red;width: 5;height: 100%;position: absolute;}
+.award-section .award-section-title{padding-bottom: 20px ;}
+.award-section .award-section-title h2{color: var(--primary);font-weight: 800;font-size: 50px;}
+.award-section .award-details{padding-bottom: 20px ;}
+.award-section .award-details h4{color: var(--primary);font-weight: 800;}
+.award-section .award-details h5{padding: 20px 0 ;}
+.award-section .award-details img{width: 50%;height: 100%;object-fit: cover;}
+.award-section .award-details img ul{}
+.award-section .award-details img ul li{}

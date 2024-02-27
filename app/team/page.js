@@ -48,6 +48,47 @@ export default function Team() {
     },
   ];
 
+  const awards = [
+    {
+      key: "1",
+      Year: "2015",
+      title: "The Marketing Excellence Awards",
+      desc: [
+        "Excellence in Event Marketing- Gold",
+        "Excellence in Partnership- Gold",
+      ],
+    },
+    {
+      key: "2",
+      Year: "2016",
+      title: "The Golden Globe Tigers Awards",
+      desc: ["Best Use of Social Media in Marketing"],
+    },
+    {
+      key: "3",
+      Year: "2018",
+      title: "The Marketing Event Awards",
+      desc: ["Best Sponsorship - Gold", "Best Integrated Marketing Campaign"],
+    },
+    {
+      key: "4",
+      Year: "2021",
+      title: "The Marketing Society Awards",
+      desc: ["Innovative Use of Technology Marketing Award"],
+    },
+    {
+      key: "5",
+      Year: "2019",
+      title: "Event Marketing Awards",
+      desc: [
+        "Best Live Event - Gold",
+        "Best Use of Technology - Silver",
+        "Best Game Changer - Silver",
+        "Best Integrated Marketing Campaign- Bronze",
+      ],
+    },
+  ];
+
   return (
     <>
       <Header />
@@ -95,11 +136,7 @@ export default function Team() {
                   <div className="col-md-3">
                     <div className="team_card">
                       <div className="team_card_img">
-                        <Image
-                          src={item.image}
-                          width={200}
-                          height={200}
-                        />
+                        <Image src={item.image} width={200} height={200} />
                       </div>
                       <div className="team_card_desc">
                         <h4>{item.name}</h4>
@@ -112,6 +149,39 @@ export default function Team() {
           </div>
         </div>
       </section>
+
+      <section className="award-section">
+        <div className="container">
+          <div className="award-section-title">
+            <h2>Awards</h2>
+          </div>
+          <div className="row inner">
+            {awards &&
+              awards.map((item) => {
+                return (
+                  <div className="col-md-6" key={item.key}>
+                    <div className="award-details">
+                      <h4>{item.Year}</h4>
+                      <Image
+                        src={`/images/awards/${item.key}.png`}
+                        width={100}
+                        height={100}
+                        alt="Awards"
+                      />
+                      <h5>{item.title}</h5>
+                      <ul>
+                        {item.desc.map((desc) => {
+                          return <li>{desc}</li>;
+                        })}
+                      </ul>
+                    </div>
+                  </div>
+                );
+              })}
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </>
   );
