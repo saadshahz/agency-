@@ -140,9 +140,13 @@ footer .foo-contact ul li a:hover{color: var(--secondary);}
 .award-section .inner::after{content: "";display: block;background-color: red;width: 5;height: 100%;position: absolute;}
 .award-section .award-section-title{padding-bottom: 20px ;}
 .award-section .award-section-title h2{color: var(--primary);font-weight: 800;font-size: 50px;}
-.award-section .award-details{padding-bottom: 20px ;}
+.award-section .award-details{padding: 20px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; margin: 10px 0; height: 90%;border-radius: 10px;}
 .award-section .award-details h4{color: var(--primary);font-weight: 800;}
 .award-section .award-details h5{padding: 20px 0 ;}
 .award-section .award-details img{width: 50%;height: 100%;object-fit: cover;}
 .award-section .award-details img ul{}
 .award-section .award-details img ul li{}
+
+.team-btn{padding: 20px 0 40px 0;}
+.team-btn a{border: 1px solid var(--primary); color: var(--primary);transition: 0.5s; text-decoration: none;width: 300px;display: block;text-align: center;padding: 20px 0;border-radius: 20px;}
+.team-btn a:hover{background-color: var(--primary);color: #fff;}
