@@ -150,3 +150,17 @@ footer .foo-contact ul li a:hover{color: var(--secondary);}
 .team-btn{padding: 20px 0 40px 0;}
 .team-btn a{border: 1px solid var(--primary); color: var(--primary);transition: 0.5s; text-decoration: none;width: 300px;display: block;text-align: center;padding: 20px 0;border-radius: 20px;}
 .team-btn a:hover{background-color: var(--primary);color: #fff;}
+
+
+.our-works-title{padding: 50px 0;}
+.our-works-title h1{color: var(--primary);font-weight: 800;font-size: 50px;}
+.our-works-title p{}
+.our-work-detail {padding: 20px 0;}
+.our-work-detail .nav-tabs{border: none;}
+.our-work-detail .nav-tabs .nav-link{background-color: transparent; width: 150px; margin: 10px; border-radius: 20px; color: var(--primary);border-color: var(--primary);}
+.our-work-detail .nav-tabs .nav-link.active{background-color: var(--primary);color: #fff;}
+.our-works-card{height: 100%;}
+.our-works-card .works-card-detail{ display: flex; justify-content: space-between; flex-direction: column;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius: 10px;}
+.our-works-card .works-card-detail .card-detail-img{height: 70%;}
+.our-works-card .works-card-detail .card-detail-img img{width: 100%;height: 100%;border-top-right-radius: 10px;border-top-left-radius: 10px;}
+.our-works-card .works-card-detail .card-detail-content{height: 30%;padding: 10px ;}
