@@ -36,9 +36,6 @@ export default function Footer() {
                 <li>
                   <a href="#">News</a>
                 </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
               </ul>
             </div>
           </div>
@@ -55,7 +52,7 @@ export default function Footer() {
                   <span>
                     <MdEmail />
                   </span>
-                  <a href={"email:saadshahz369@gmail.com"}>
+                  <a href={"mailto:saadshahz369@gmail.com"}>
                     info@marketingagency.co
                   </a>
                 </li>

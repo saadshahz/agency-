@@ -22,10 +22,7 @@ export default function Header() {
                   <Link href="/works">Projects</Link>
                 </li>
                 <li>
-                  <Link href="#">News</Link>
-                </li>
-                <li>
-                  <Link href="#">Contact</Link>
+                  <Link href="/news">News</Link>
                 </li>
               </ul>
             </nav>

@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function ClientSlider() {
   const dummyclient = [
     {
-      name: "rAngelina Ochoa",
+      name: "Angelina Ochoa",
       img:  "/images/client/client-2.jpg",
       company : "The Interactive College",
       desc: "I came by some of your work online and love it! The reason I'm contacting you is that I need a logo for my personal brand and was wondering if you could help me out with that. I don't have a very high budget so I would prefer it if you don't spend too much time on it.",

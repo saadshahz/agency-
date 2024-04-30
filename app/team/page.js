@@ -5,6 +5,7 @@ import Header from "../../component/common/Header";
 import burger from "../../public/images/burger.png";
 import adidas from "../../public/images/adidas.png";
 import Link from "next/link";
+
 export default function Team() {
   const team = [
     {

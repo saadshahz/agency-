@@ -152,7 +152,7 @@ footer .foo-contact ul li a:hover{color: var(--secondary);}
 .team-btn a:hover{background-color: var(--primary);color: #fff;}
 
 
-.our-works-title{padding: 50px 0;}
+.our-works-title{padding: 50px 0;background-image: url("../../public/images/help-section-bg.svg"); background-position: center;background-size: 100% 100%; }
 .our-works-title h1{color: var(--primary);font-weight: 800;font-size: 50px;}
 .our-works-title p{}
 .our-work-detail {padding: 20px 0;}
@@ -164,3 +164,35 @@ footer .foo-contact ul li a:hover{color: var(--secondary);}
 .our-works-card .works-card-detail .card-detail-img{height: 70%;}
 .our-works-card .works-card-detail .card-detail-img img{width: 100%;height: 100%;border-top-right-radius: 10px;border-top-left-radius: 10px;}
 .our-works-card .works-card-detail .card-detail-content{height: 30%;padding: 10px ;}
+
+
+
+@media (max-width: 1280px) and (min-width: 1024px){
+
+}
+@media (max-width: 1023px) and (min-width: 992px){
+
+}
+@media (max-width: 991px){
+	h1{font-size:24px;}
+	h2{font-size:19px;}
+	h3{font-size:16px;}
+	h4{font-size:14px;}
+}
+@media (max-width: 767px){
+	
+}
+@media (max-width: 577px){
+
+}
+@media (max-width:450px)
+{
+
+}
+@media (max-width:375px)
+{
+
+}
+@media (max-width:320px){
+
+}
