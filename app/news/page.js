@@ -7,7 +7,7 @@ export default function News() {
   return (
     <>
       <Header />
-      <section className="our-works-title">
+      {/* <section className="our-works-title">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -16,7 +16,7 @@ export default function News() {
             <div className="col-md-6"></div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="our-work-detail">
         <div className="container">
